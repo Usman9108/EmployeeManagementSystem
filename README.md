@@ -24,7 +24,7 @@ Clone the repository:
 
 sh
 Copy code
-git clone https://github.com/yourusername/employee-management-system.git
+git clone https://github.com/Usman9108/EmployeeManagementSystem.git
 cd employee-management-system
 Configure the database:
 
