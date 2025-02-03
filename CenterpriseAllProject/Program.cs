@@ -53,12 +53,12 @@ public class Program
 
         services.AddAuthentication().AddGoogle(options =>
         {
-            options.ClientId = "621207276546-qeqfctnpmmkrsvt8156e2n5atnb8mf5q.apps.googleusercontent.com";
-            options.ClientSecret = "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";
+            options.ClientId = _config.GetSection("Google")["ClientId"]!;
+            options.ClientSecret = _config.GetSection("Google")["ClientSecret"]!;
         }).AddFacebook(options =>
         {
-            options.AppId = "590548273361936";
-            options.AppSecret = "f4115897579640a99ada92a82da6a1bd";
+            options.AppId = _config.GetSection("Facebook")["AppId"]!; ;
+            options.AppSecret = _config.GetSection("Facebook")["AppSecret"]!;
         });
 
         services.ConfigureApplicationCookie(options =>

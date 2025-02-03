@@ -247,7 +247,6 @@ namespace CenterpriseAllProject.Migrations
 
                     b.ToTable("AspNetUserRoles", (string)null);
                 });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
                     b.Property<string>("UserId")
